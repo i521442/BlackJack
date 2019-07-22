@@ -1,0 +1,182 @@
+/* ### Page Reset ### */
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+@font-face {
+    font-family: "Elixia";
+    src: url("../Fonts/Elixia.ttf");
+}
+
+/* ### Debugger ### */
+/*{border: 1px solid yellow;}
+
+/* ### Page Configuration ### */
+body{
+    background-image: url("../Images/background3.jpg");
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header{
+    width: 100%;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    background-image: url("../Images/background.jpg");
+    background-attachment: scroll;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom: 2px black groove;
+    border-top: 2px black groove;
+}
+footer{
+    width: 100%;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    background-image: url("../Images/background.jpg");
+    background-attachment: scroll;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom: 2px black groove;
+    border-top: 2px black groove;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+article{
+    display: inline-flex;
+    flex-wrap: nowrap;
+    max-width: 100%;
+    padding-left: 3%;
+}
+section{
+    width: 100%;
+}
+#cardSection {
+    width: 70%;
+}
+#infoSection{
+    width: 30%;
+    display: block;
+    padding-top: 3%;
+    margin-right: 3%;
+}
+#dealer{
+    display: inline-flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    padding-bottom: 1%;
+}
+#player{
+    display: inline-flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    padding-bottom: 1%;
+}
+.cardSlot{
+    width: 15%;
+    height: 15%;
+    padding: 0% 0.5%;
+}
+
+/* ### Headings ### */
+h1{
+    font-family: Elixia;
+    font-size: 2.5rem;
+    color: white;
+    padding: 0.5% 0%;
+}
+h2{
+    font-family: Elixia;
+    font-size: 1.85rem;
+    color: black;
+    padding-bottom: 0.5%;
+    padding-left: 3%;
+}
+h3{
+    font-family: Elixia;
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+    padding: 0.5% 0%;
+}
+p{
+    font-family: Elixia;
+    color: white;
+    font-size: 1.3rem;
+    background-image: url("../Images/background.jpg");
+    background-size: cover;
+    background-attachment: scroll;
+    border: 2px black groove;
+    border-radius: 7%;
+    text-align: center;
+}
+
+/* ### Other Configurations ### */
+#buttons{
+    padding-bottom: 2%;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+button{
+    font-family: Elixia;
+    color: white;
+    font-size: 1.5rem;
+    padding: 0% 5%;
+    background-image: url("../Images/background.jpg");
+    background-attachment: scroll;
+    background-size: cover;
+    border: 2px black groove;
+    border-radius: 7%;
+}
+
+/* ### Media Queries ### */
+@media Screen and (max-width: 1255px){
+    body{
+        background-image: url("../Images/background2.jpg");
+        background-attachment: scroll;
+        background-repeat: repeat;
+        background-size: cover;
+    }
+    article{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #cardSection{
+        width: 100%;
+        padding-bottom: 15%;
+    }
+    #infoSection{
+        width: 100%;
+    }
+    #dealer{
+        justify-content: center;
+    }
+    #player{
+        justify-content: center;
+    }
+    h1{
+        font-size: 4.5rem;
+    }
+    h2{
+        text-align: center;
+        font-size: 3.5rem;
+    }
+    #buttons{
+        padding-bottom: 7%;
+    }
+    button{
+        font-size: 2.5rem;
+    }
+    p{
+        font-size: 2.5rem;
+    }
+    h3{
+        font-size: 2.2rem;
+    }
+}

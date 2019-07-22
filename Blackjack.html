@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <script src="Javascripts/Manager.js"></script>
+    <script src="Javascripts/Blackjack.js"></script>
+    <link rel="stylesheet" href="Stylesheets/FutureBJK.css" type="text/css"/>
+    <title>BlackJack</title>
+</head>
+
+<body>
+
+<header>
+    <h1>BlackJack</h1>
+</header>
+
+<article>
+    <section id="cardSection">
+        <h2>Dealer</h2>
+        <section id="dealer">
+            <img id="dealerCard1" src="Images/Cards/Cross.png" class="cardSlot">
+            <img id="dealerCard2" src="Images/Cards/Cross.png" class="cardSlot">
+            <img id="dealerCard3" src="Images/Cards/Cross.png" class="cardSlot">
+            <img id="dealerCard4" src="Images/Cards/Cross.png" class="cardSlot">
+            <img id="dealerCard5" src="Images/Cards/Cross.png" class="cardSlot">
+        </section>
+
+        <h2>Player</h2>
+        <section id="player">
+
+            <img id="playerCard1" src="Images/Cards/Cross.png" class="cardSlot">
+            <img id="playerCard2" src="Images/Cards/Cross.png" class="cardSlot">
+            <img id="playerCard3" src="Images/Cards/Cross.png" class="cardSlot">
+            <img id="playerCard4" src="Images/Cards/Cross.png" class="cardSlot">
+            <img id="playerCard5" src="Images/Cards/Cross.png" class="cardSlot">
+        </section>
+    </section>
+
+    <section id="infoSection">
+        <section id="buttons">
+            <button id="hit" type="button" onclick="playerNewCard()">Hit</button>
+            <button id="pass" type="button" onclick="dealerFinish()">Pass</button>
+            <button id="newGame" type="button" onclick="newGame()">New Game</button>
+        </section>
+        <p id="gameState"></p>
+    </section>
+
+</article>
+
+<footer>
+    <h3>Trabalho realizado por João Simões e Gonçalo Moncarcho - LEIM33D 17/18.</h3>
+</footer>
+
+<section id="scriptLoader">
+    <script> window.onload = newGame();</script>
+</section>
+
+</body>
+</html>
