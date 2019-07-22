@@ -62,7 +62,7 @@ function updateDealer(state){
 //Self Made
 function printPlayerCards(cards){
     for(let a = 0; a < cards.length; a++){
-        let pathString = "../Images/Cards/" + cards[a].getCardSuit() + "_" + cards[a].getCardNumber() + ".png";
+        let pathString = "Images/Cards/" + cards[a].getCardSuit() + "_" + cards[a].getCardNumber() + ".png";
         let cardImg = document.getElementById("playerCard" + (a+1) + "");
         cardImg.setAttribute("src", pathString);
     }
@@ -71,7 +71,7 @@ function printPlayerCards(cards){
 //Self Made
 function printDealerCards(cards){
     for(let a = 0; a < cards.length; a++){
-        let pathString = "../Images/Cards/" + cards[a].getCardSuit() + "_" + cards[a].getCardNumber() + ".png";
+        let pathString = "Images/Cards/" + cards[a].getCardSuit() + "_" + cards[a].getCardNumber() + ".png";
         let cardImg = document.getElementById("dealerCard" + (a+1) + "");
         cardImg.setAttribute("src", pathString);
     }
@@ -80,7 +80,7 @@ function printDealerCards(cards){
 //Self Made
 function resetCrossCards(){
     for(let a = 0; a < 5; a++){
-        let pathString = "../Images/Cards/Cross.png";
+        let pathString = "Images/Cards/Cross.png";
         let dealerCards = document.getElementById("dealerCard" + (a+1) + "");
         let playerCards = document.getElementById("playerCard" + (a+1) + "");
         dealerCards.setAttribute("src", pathString);
